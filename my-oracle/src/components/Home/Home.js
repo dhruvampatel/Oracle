@@ -19,7 +19,7 @@ const Home = () => {
         const createInstance = () => {
           if (window.ethereum) {
             let _web3 = new Web3(window.ethereum);
-            let _instance = new _web3.eth.Contract(ABI, '0x871ccA27CBAe456FeAe3BA819BC0f1Cb7a0308CF');
+            let _instance = new _web3.eth.Contract(ABI, process.env.CONTRACT_ADDRESS);
             setInstance(_instance);
             setWeb3(_web3);
 
