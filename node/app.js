@@ -3,7 +3,6 @@ var path = require('path');
 var cors = require('cors');
 
 var homeRouter = require('./routes/home');
-var usersRouter = require('./routes/users');
 
 var app = express();
 

@@ -1,3 +1,4 @@
+require('dotenv').config();
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Web3 from "web3";
